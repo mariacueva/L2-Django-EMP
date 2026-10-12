@@ -1,0 +1,14 @@
+<h2>{{ title }}</h2>
+<p>
+    La {{ nombre_operacion }} de
+    {{ numero1 }} {{ simbolo }} {{ numero2 }}
+    = {{ resultado }}
+</p>
+
+<a href="{% url 'encuesta:calculadora' %}">
+    Realizar otra operación
+</a>
+<br>
+<a href="{% url 'encuesta:index' %}">
+    Volver a la encuesta
+</a>

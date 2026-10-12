@@ -1,0 +1,18 @@
+<h2>{{ title }}</h2>
+
+<p>Altura: {{ altura }} metros</p>
+<p>Diámetro: {{ diametro }} metros</p>
+<p>Radio: {{ radio }} metros</p>
+
+<h2>Volumen del cilindro</h2>
+<p>{{ volumen|floatformat:4 }} m³</p>
+
+<a href="{% url 'encuesta:cilindro' %}">
+    Calcular otro cilindro
+</a>
+
+<br><br>
+
+<a href="{% url 'encuesta:index' %}">
+    Volver a la encuesta
+</a>
